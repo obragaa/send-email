@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <form>
+        <label htmlFor="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="E-mail de destino..."/>
+
+        {/* Antes 'nome', agora chamamos esta label de 'assunto'. */}
+        <label htmlFor="assunto">Assunto</label>
+        <input type="text" id="assunto" name="assunto" placeholder="Assunto..."/>
+
+        <label htmlFor="mensagem">Mensagem</label>
+        <input type="mensagem" id="mensagem" name="mensagem" placeholder="Mensagem..."/>
+      </form>
     </div>
   );
 }
