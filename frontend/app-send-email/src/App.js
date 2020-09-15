@@ -13,7 +13,7 @@ function App() {
         <input type="text" id="assunto" name="assunto" placeholder="Assunto..."/>
 
         <label htmlFor="mensagem">Mensagem</label>
-        <input type="mensagem" id="mensagem" name="mensagem" placeholder="Mensagem..."/>
+        <input type="text" id="mensagem" name="mensagem" placeholder="Mensagem..."/>
       </form>
     </div>
   );
