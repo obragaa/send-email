@@ -3,6 +3,39 @@ import './Home.css';
 import Logo from '../../Assets/logo.png'
 
 function Home() {
+    const [campos, setCampos] = useState({
+        nome: '',
+        email: '',
+        mensagem: '',
+        anexo: ''
+    });
+    function handleInputChange(event){
+      if(event.target.name === "anexo")
+        campos[event.target.name] = event.target.files[0];
+      else
+        campos[event.target.name] = event.target.value;
+      setCampos(campos);
+    }
+  
+    function send(){
+      const formData = new FormData();
+      Object.keys(campos).forEach(key => formData.append(key, campos[key]));
+      axios.post('http://localhost:3030/send', 
+                formData,
+                {
+                  headers: {
+                   "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
+                  }
+                })
+        .then(response => { console.log(response.data); })
+    }
+  
+    function handleFormSubmit(event){ 
+      event.preventDefault(); 
+      console.log(campos); 
+      send(campos);
+    }
+
     return(
         <>
             <div className="container">
@@ -71,32 +104,42 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* Seção do Form, falta terminar e preencher como no exemplo do professor.
             
             <section className="form-section">
-                <div className="form">
-                    <form>
-                        <label></label>
-                        <input></input>
-                    </form>
-                </div>
-            </section> */}
+            <form onSubmit={handleFormSubmit}>
+                <label htmlFor="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="E-mail de destino.." onChange={handleInputChange} />
+
+                <label htmlFor="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome da pessoa.." onChange={handleInputChange} />
+
+                <label htmlFor="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva algo.." className="textArea" onChange={handleInputChange}></textarea>
+
+                <label htmlFor="anexo">Anexo</label>
+                <input type="file" id="anexo" name="anexo" onChange={handleInputChange} />
+
+                <input type="submit" value="Enviar" />
+            </form>
+            </section> 
+
+
             <section className="footer">
                 <div className="footer-title">
                     <h2>Desenvolvedores</h2>
                 </div>
                 <footer>
                     <ul className="footer-names">
-                        <img src={GitHub} alt="Github-Logo" className="img-footer"/>
+                        <img src={Logo} alt="Github-Logo" className="img-footer"/>
                         <li><a href="https://github.com/obragaa"><span>Felipe Braga</span></a></li>
 
-                        <img src={GitHub} alt="Github-Logo" className="img-footer"/>
+                        <img src={Logo} alt="Github-Logo" className="img-footer"/>
                         <li><a href="https://github.com/vidal987"><span>Matheus Vidal</span></a></li>
 
-                        <img src={GitHub} alt="Github-Logo" className="img-footer"/>
+                        <img src={Logo} alt="Github-Logo" className="img-footer"/>
                         <li><a href="https://github.com/ramos-r"><span>Rebecca Ramos</span></a></li>
 
-                        <img src={GitHub} alt="Github-Logo" className="img-footer"/>
+                        <img src={Logo} alt="Github-Logo" className="img-footer"/>
                         <li><a href="https://github.com/Victor846"><span>Victor Morais</span></a></li>
                     </ul>
                 </footer>
