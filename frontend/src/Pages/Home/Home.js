@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react';
 import './Home.css';
-import Logo from '../../Assets/logo.png'
+import axios from 'axios';
+import Logo from '../../Assets/logo.png';
 
 function Home() {
     const [campos, setCampos] = useState({
