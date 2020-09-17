@@ -1,6 +1,8 @@
 import React from 'react'
 import './Home.css';
 import Logo from '../../Assets/logo.png'
+import GitLogo from '../../Assets/github-logo.svg'
+import card1 from '../../Assets/img-cards/card-vidal.png'
 
 function Home() {
     return(
@@ -30,13 +32,15 @@ function Home() {
                         <h3>Felipe // Page</h3>
                     </div>
                 </div>
+
                 <div className="card">
-                    <img src="" alt=""/>
+                    {/* <img src={card1} alt=""/> */}
 
                     <div className="title">
                         <h3>Matheus // Page</h3>
                     </div>
                 </div>
+
                 <div className="card">
                     <img src="" alt=""/>
 
@@ -44,6 +48,7 @@ function Home() {
                         <h3>Rebecca // Page</h3>
                     </div>
                 </div>
+
                 <div className="card">
                     <img src="" alt=""/>
 
@@ -56,19 +61,41 @@ function Home() {
             {/* Aqui haverão mais imagens de páginas que os devs fizeram, separadas por cards. */}
             <section className="model">
                 <div className="info">
-                    <p>DASDASDA</p>
+                    <p>Veja mais developers para explorar:</p>
                 </div>
 
                 <div className="cards2">
-                    <div className="card2">
 
-                    </div>
                     <div className="card2">
-                        
                     </div>
+
                     <div className="card2">
-                        
                     </div>
+
+                    <div className="card2">
+                    </div>
+
+                    <div className="card2">
+                    </div>
+
+                    <div className="card2">
+                    </div>
+
+                    <div className="card2">
+                    </div>
+
+                    <div className="card2">
+                    </div>
+
+                    <div className="card2">
+                    </div>
+
+                    <div className="card2">
+                    </div>
+
+                    <div className="card2">
+                    </div>
+
                 </div>
             </section>
             {/* Seção do Form, falta terminar e preencher como no exemplo do professor.
@@ -83,20 +110,20 @@ function Home() {
             </section> */}
             <section className="footer">
                 <div className="footer-title">
-                    <h2>Desenvolvedores</h2>
+                    <h2 id="h2-footer">Desenvolvedores</h2>
                 </div>
                 <footer>
                     <ul className="footer-names">
-                        <img src={GitHub} alt="Github-Logo" className="img-footer"/>
-                        <li><a href="https://github.com/obragaa"><span>Felipe Braga</span></a></li>
+                        <img src={GitLogo} alt="Logo-Logo" className="img-footer"/>
+                        <li><a href="https://Logo.com/obragaa"><span>Felipe Braga</span></a></li>
 
-                        <img src={GitHub} alt="Github-Logo" className="img-footer"/>
+                        <img src={GitLogo} alt="Github-Logo" className="img-footer"/>
                         <li><a href="https://github.com/vidal987"><span>Matheus Vidal</span></a></li>
 
-                        <img src={GitHub} alt="Github-Logo" className="img-footer"/>
-                        <li><a href="https://github.com/ramos-r"><span>Rebecca Ramos</span></a></li>
+                        <img src={GitLogo} alt="Logo-Logo" className="img-footer"/>
+                        <li><a href="https://Logo.com/ramos-r"><span>Rebecca Ramos</span></a></li>
 
-                        <img src={GitHub} alt="Github-Logo" className="img-footer"/>
+                        <img src={GitLogo} alt="Github-Logo" className="img-footer"/>
                         <li><a href="https://github.com/Victor846"><span>Victor Morais</span></a></li>
                     </ul>
                 </footer>
