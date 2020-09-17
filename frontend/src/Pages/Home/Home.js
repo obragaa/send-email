@@ -61,7 +61,7 @@ function Home() {
             {/* Aqui haverão mais imagens de páginas que os devs fizeram, separadas por cards. */}
             <section className="model">
                 <div className="info">
-                    <p>Veja mais developers para explorar:</p>
+                    <p>Veja mais projetos de developers para explorar:</p>
                 </div>
 
                 <div className="cards2">
@@ -98,16 +98,9 @@ function Home() {
 
                 </div>
             </section>
-            {/* Seção do Form, falta terminar e preencher como no exemplo do professor.
             
-            <section className="form-section">
-                <div className="form">
-                    <form>
-                        <label></label>
-                        <input></input>
-                    </form>
-                </div>
-            </section> */}
+
+
             <section className="footer">
                 <div className="footer-title">
                     <h2 id="h2-footer">Desenvolvedores</h2>
