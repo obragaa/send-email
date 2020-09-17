@@ -8,10 +8,10 @@
 body {
     background: #d3d5fd;
 }
-
+/* 
 .container {
 
-}
+} */
 
 .fake-header {
     margin-top: 50px;
@@ -75,19 +75,15 @@ body {
     justify-content: end;
 }
 
-
-
-
-
 .model {
     margin-top: 80px;
     display: flex;
     background: #212d40;
 }
-
+/* 
 .info {
     
-}
+} */
 
 .card2{
     height: 250px;
