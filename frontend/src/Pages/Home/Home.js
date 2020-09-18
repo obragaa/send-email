@@ -179,11 +179,13 @@ function Home() {
             </section>
             
             <form onSubmit={handleFormSubmit}>
+
+                <h1>Formulário de Contato</h1>
                 <label htmlFor="email">E-mail</label>
                 <input type="text" id="email" name="email" placeholder="E-mail de destino.." onChange={handleInputChange} />
 
 
-                <label htmlFor="nome">Nome</label>
+                <label htmlFor="nome">Assunto</label>
                 <input type="text" id="nome" name="nome" placeholder="Nome da pessoa.." onChange={handleInputChange} />
 
 
@@ -192,7 +194,7 @@ function Home() {
 
 
                 <label htmlFor="anexo">Anexo</label>
-                <input type="file" id="anexo" name="anexo" onChange={handleInputChange} />
+                <input  type="file" id="anexo" name="anexo" onChange={handleInputChange} />
 
 
                 <input type="submit" value="Enviar" />
