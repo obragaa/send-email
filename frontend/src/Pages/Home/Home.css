@@ -18,22 +18,21 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-left: 40px;
     margin-right: 40px;
-    align-items: center;
+    width: 80%;
 }
 
 .img-header img{
     width: 155px;
     height: 77px;
-
 } 
 
 .menu{
     display: flex;
     text-align: center;
     justify-content: center;
-
 }
 
 .menu .nav-header {
@@ -41,7 +40,6 @@ body {
     list-style: none;
     font-weight: 700;
     padding-top: 35px;
-    
 }
 
 .menu .nav-header li {
@@ -71,12 +69,31 @@ body {
     height: 200px;
     width: 370px;
     border-radius: 20px;
-    border: solid;
     margin-top: 10px;
     margin: 30px;
+    box-shadow: 2px 2px 5px #474A56;
 }
 
+/* .card:hover{
+    background: #212d40;
+    width: 380px;
+    height: 210px;
+    transition: 0.1s;
+} */
 
+.card img {
+    height: 200px;
+    width: 370px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #474A56;
+}
+
+.card img:hover{
+    color: #212d40;
+    width: 380px;
+    height: 210px;
+    transition: 0.1s;
+}
 
 .card .title {
     display: flex;
@@ -98,15 +115,29 @@ body {
     background: #212d40;
     color: white;
     font-size: 18px;
+    box-shadow: 2px 2px 5px #474A56;
 } 
 
 .card2{
-    border: solid;
     border-radius: 20px;
     background-color: #868c99;
-    width: 200px;
+    width: 230px;
     height: 150px;
     margin: 30px;
+    box-shadow: 2px 2px 5px #474A56;
+}
+
+.card2 img{
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #474A56;
+}
+
+.card2 img:hover{
+    color: #d3d5fd31;
+    width: 250px;
+    transition: 0.1s;
 }
 
 .cards2{
@@ -115,15 +146,19 @@ body {
     height: auto;
     width: 100%;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     padding: 1,5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .cards2 div:hover{
     color: #d3d5fd31;
     border: solid;
-    transition: 1s;
+    width: 250px;
+    transition: 0.1s;
 }
+
 .footer{
     padding: 1%;
     width: 100%;
