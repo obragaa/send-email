@@ -14,35 +14,36 @@ body {
 } */
 
 .fake-header {
-    margin-top: 50px;
+    margin-top: 35px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 80%;
 }
 
 .img-header img{
-        width: 137,5px;
-        height: 65px;
+    width: 155px;
+    height: 77px;
 } 
 
 .menu{
     display: flex;
     text-align: center;
     justify-content: center;
-
 }
 
 .menu .nav-header {
     display: inline;
     list-style: none;
     font-weight: 700;
-    padding-top: 50px;
-    
+    padding-top: 35px;
 }
 
 .menu .nav-header li {
     display: inline;
-    line-height: 20px;
     font-size: 20px;
    
 }
@@ -58,16 +59,40 @@ body {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 50px;
+    margin: 50px;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
 }
 
 .card {
     background: #212d40;
-    height: 350px;
-    width: 300px;
+    height: 200px;
+    width: 370px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin: 30px;
+    box-shadow: 2px 2px 5px #474A56;
+}
+
+/* .card:hover{
+    background: #212d40;
+    width: 380px;
+    height: 210px;
+    transition: 0.1s;
+} */
+
+.card img {
+    height: 200px;
+    width: 370px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #474A56;
+}
+
+.card img:hover{
+    color: #212d40;
+    width: 380px;
+    height: 210px;
+    transition: 0.1s;
 }
 
 .card .title {
@@ -78,17 +103,159 @@ body {
 .model {
     margin-top: 80px;
     display: flex;
-    background: #212d40;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-/* 
+
 .info {
-    
-} */
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 28px;
+    background: #212d40;
+    color: white;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px #474A56;
+} 
 
 .card2{
-    height: 250px;
+    border-radius: 20px;
+    background-color: #868c99;
+    width: 230px;
+    height: 150px;
+    margin: 30px;
+    box-shadow: 2px 2px 5px #474A56;
+}
+
+.card2 img{
     width: 250px;
-    background: #d3d5fd;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #474A56;
+}
+
+.card2 img:hover{
+    color: #d3d5fd31;
+    width: 250px;
+    transition: 0.1s;
+}
+
+.cards2{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1,5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.cards2 div:hover{
+    color: #d3d5fd31;
+    border: solid;
+    width: 250px;
+    transition: 0.1
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    background:#a0a3ce ;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 
+
+input[type=submit] {
+    height: 25px;
+    background-color: #474A56;
+    border-radius: 4px;
+    border: 1px solid #212d40;
+    margin-top: 10px;
+
+}
+input[type=submit]::placeholder {
+    padding: 10px;
+}
+
+input[type=text]::placeholder{
+    padding: 10px;
+}
+
+input[type=text]{
+    background-color: #474A56;
+    border: solid 1px #212d40;
+    height: 50px;
+    border-radius: 8px;
+}
+
+label {
+    font-weight: 700;
+    padding: 10px;
+
+}
+
+textarea{
+    width: 500px;
+    height: 250px;
+    background-color:#474A56;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+textarea::placeholder {
+    padding: 10px;
+}
+
+.footer{
+    padding: 1%;
+    width: 100%;
+    height: auto;
+    background: #212d40;
+    justify-content: center;
+    align-items: center;
+}
+
+#h2-footer{
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
+
+.footer-names{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-footer{
+    width: 45px;
+    height: 45px;
+}
+
+.footer li{
+    list-style: none;
+    margin: 15px;
+    display: inline-block;
+}
+
+.footer li a:hover{
+    color: #a0a3ce;
+    text-decoration: #a0a3ce;
+    transition: 1s;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #D3D5FD;
+    text-decoration: #a0a3ce;
+    transition: 1s;
+}
